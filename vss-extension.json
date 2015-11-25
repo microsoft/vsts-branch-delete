@@ -1,18 +1,39 @@
 {
     "manifestVersion": 1,
-    "id": "branch-delete",
-    "version": "0.1.0",
+    "id": "samples-branch-delete",
+    "version": "0.1.2",
     "name": "Branch Delete",
     "description": "Clean up old or unneeded Git branches right from within Visual Studio Team Services.",
-    "publisher": "ms-devlabs",
+    "publisher": "ms-samples",
     "public": true,
     "icons": {
         "default": "images/branch-delete.png"
     },
     "scopes": ["vso.code_manage"],
     "tags": [
-        "Sample"
+        "git",
+        "delete"
     ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "LICENSE.txt"
+        }
+    },
+    "links": {
+        "learn": {
+            "uri": "https://github.com/Microsoft/vsts-branch-delete"
+        },
+        "issues": {
+            "uri": "https://github.com/Microsoft/vsts-branch-delete/issues"
+        }
+    },
+    "branding": {
+        "color": "rgb(168, 26, 26)",
+        "theme": "dark"
+    },
     "categories": [
         "Code"
     ],
@@ -20,11 +41,6 @@
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],
-    "screenshots": [
-        {
-            "path": "images/delete-action-screenshot.png"
-        }              
     ],
     "files": [
         {
