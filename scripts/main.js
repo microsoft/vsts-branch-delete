@@ -5,6 +5,11 @@ var deleteBranchMenu = (function () {
         execute: function (sourceItemContext) {
             var ref = sourceItemContext.ref ? sourceItemContext.ref : null;
             if (confirm("Are you sure you want to delete the branch '" + ref.friendlyName + "'?")) {
+                // Publish event to Application Insights
+                if (window.appInsights) {
+                    window.appInsights.trackEvent("BranchDeleted");
+                }
+                
                 // Post the ref update
                 VSS.ready(function () {
                     require(["TFS/VersionControl/GitRestClient"], function (TfsGitClient) {
