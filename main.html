@@ -19,10 +19,14 @@
     
     <script>
         VSS.init({ usePlatformScripts: true });
+        
         VSS.ready(function() {
-            window.appInsights.setAuthenticatedUserContext(VSS.getWebContext().user.id, VSS.getWebContext().collection.id);
+            window.appInsights.setAuthenticatedUserContext(
+                    VSS.getWebContext().user.id, 
+                    VSS.getWebContext().collection.id);
             window.appInsights.trackPageView("BranchDelete");              
         });
-    </script>    
+    </script>   
+     
 </body>
 </html>
