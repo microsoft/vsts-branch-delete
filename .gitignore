@@ -1,1 +1,3 @@
-.vsix
+*.vsix
+bower_components
+
