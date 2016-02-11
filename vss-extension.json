@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "samples-branch-delete",
-    "version": "0.1.4",
+    "version": "0.1.7",
     "name": "Branch Delete",
     "description": "Clean up old or unneeded Git branches right from within Visual Studio Team Services.",
     "publisher": "ms-samples",
@@ -48,7 +48,7 @@
             "addressable": true
         },
         {
-            "path": "main.html",
+            "path": "branchDelete.html",
             "addressable": true
         },
         {
@@ -72,7 +72,7 @@
                 "title": "Delete...",
                 "icon": "images/delete.png",
                 "group": "actions",
-                "uri": "main.html"
+                "uri": "branchDelete.html"
             }
         }
     ]
