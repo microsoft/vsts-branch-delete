@@ -1,3 +1,5 @@
+> NOTE: The ability to delete branches is now part of Team Services and will be part of the upcoming on-prem release of Team Foundation Server. This extension is still available for users of TFS 2015. 
+
 ## Clean up branches right from the web
 
 Lots of old branches piling up in your Git repo? Easily delete them from the web. No client tools necessary.
